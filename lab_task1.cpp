@@ -8,7 +8,7 @@ long double F(double y);
 
 int main() {
     cout << "Введите число y: ";
-    int y;
+    double y;
     cin >> y;
     cout << "Полученное значение: ";
     cout << F(y);
@@ -31,9 +31,8 @@ int factorial(int x) {
 }
 
 double deg(double x, int k) {
-    double X;
-    X = x;
-    for (int i = 2; i <= k; i++) {
+    double X=1;
+    for (int i = 1; i <= k; i++) {
         X *= x;
     }
     return X;
@@ -47,6 +46,7 @@ long double t(double x) {
     }
     for (int k = 0; k <= 10; k++) {
         sum2 += deg(x, 2*k) / factorial(2*k);
+
     }
     return (sum1 / sum2);
 }
