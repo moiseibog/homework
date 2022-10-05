@@ -33,5 +33,6 @@ int main() {
             }
         }
     }
-    cout << diff;
+    cout << "Минимальная разность: " << diff;
+    return 0;   
 }
